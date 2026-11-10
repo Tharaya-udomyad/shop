@@ -2,7 +2,11 @@ package th.ac.utc.shop.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import th.ac.utc.shop.Model.Product;
+
+import org.springframework.stereotype.Service;
+import th.ac.utc.shop.model.Product;
+
+@Service
 public class InMemoryProductService implements ProductService {
     private final List<Product> products = new ArrayList<>();
     private long nextId = 1;
@@ -33,4 +37,5 @@ public class InMemoryProductService implements ProductService {
                 .filter(p -> p.getName().contains(keyword))
                 .toList();
     }
+
 }

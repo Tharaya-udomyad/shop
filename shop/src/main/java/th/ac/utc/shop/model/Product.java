@@ -1,4 +1,4 @@
-package th.ac.utc.shop. Model;
+package th.ac.utc.shop. model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
